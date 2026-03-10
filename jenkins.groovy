@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        // AWS 계정 ID와 리전 설정
         AWS_ACCOUNT_ID = "637423625226"
         AWS_REGION     = "ap-northeast-2" 
         ECR_REGISTRY   = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
