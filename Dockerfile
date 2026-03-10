@@ -6,4 +6,3 @@ RUN if [ ! -f go.mod ]; then go mod init myapp; fi && \
     go mod tidy && \
     go build -o main main.go
 EXPOSE 80
-CMD ["./main"]
