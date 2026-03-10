@@ -38,7 +38,6 @@ pipeline {
         stage('Cleanup') {
             steps {
                 sh "docker rmi ${ECR_REGISTRY}/${ECR_NAME}:${IMAGE_TAG}"
-                sh "docker rmi ${ECR_REGISTRY}/${ECR_NAME}:latest"
             }
         }
     }
