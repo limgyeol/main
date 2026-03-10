@@ -6,7 +6,7 @@ pipeline {
         AWS_REGION     = "ap-northeast-2" 
         ECR_REGISTRY   = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com"
         ECR_NAME      = "demo-ecr"
-        IMAGE_TAG      = "${env.BUILD_NUMBER}" // 빌드 번호를 태그로 사용
+        IMAGE_TAG      = "${env.BUILD_NUMBER}" // Build 번호를 태그로 사용
     }
 
     stages {
