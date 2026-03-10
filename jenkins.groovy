@@ -21,7 +21,6 @@ pipeline {
                 script {
                     sh "docker build -t ${ECR_NAME}:${IMAGE_TAG} ."
                     sh "docker tag ${ECR_NAME}:${IMAGE_TAG} ${ECR_REGISTRY}/${ECR_NAME}:${IMAGE_TAG}"
-                    sh "docker tag ${ECR_NAME}:${IMAGE_TAG} ${ECR_REGISTRY}/${ECR_NAME}:latest"
                 }
             }
         }
